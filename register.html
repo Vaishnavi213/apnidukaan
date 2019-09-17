@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <link rel="stylesheet" type="text/css" href="login.css">
+  <link rel="stylesheet" type="text/css" href="home.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body> 
+       <div class="container-fluid">
+      <div class="navbar navbar-expand-sm fixed-top" style="padding-bottom: 0px; margin-bottom: 2px; margin-top: 0px">
+      <ul class="navbar-nav" style="width: 100%; padding: 0%;margin-bottom: 2px;" >
+
+        <div id="mySidenav" class="sidenav">
+          <a class="closebtn" href="#" onclick="closeNav()">&times;</a><hr id="line">
+          <a class="menulinks" href="#">On Sale</a><hr id="line">
+          <a class="menulinks" href="#">Electronics</a><hr id="line">  
+          <a class="menulinks" href="#">TV & Appliances</a><hr id="line">
+          <a class="menulinks" href="#">Men</a><hr id="line">
+          <a class="menulinks" href="#">Women</a><hr id="line">
+          <a class="menulinks" href="#">Baby & Kids</a><hr id="line">
+          <a class="menulinks" href="#">Home & Furniture</a><hr id="line">
+          <a class="menulinks" href="#">Sports</a><hr id="line">
+          <a class="menulinks" href="#">Books & more..</a><hr id="line">
+
+                </div>
+                <span style="font-size:30px; cursor:pointer; margin-top: 10px;" onclick="openNav()">&#9776;</span>
+            <script>
+              function openNav() {
+                document.getElementById("mySidenav").style.width = "260px";
+                document.getElementById("main").style.marginLeft = "260px";
+              }
+
+              function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+                document.getElementById("main").style.marginLeft= "0";
+              }
+            </script>
+            
+        <div class="logo">
+          <li class="nav-item">
+            <a class="navbar-brand" href="#"></a>
+            <img src="download.png" alt="Logo" style="width:210px;">
+          </li>
+        </div>
+
+          <div class="search-box" style="margin-top: 18px;margin-left: auto; margin-right: auto;">
+                <form class="form-inline" action="#">
+              <input class="form-control" type="text" placeholder="Search" style="border: 1.5px solid #e49a15; 
+              width: 500px; margin-left: -2px;">
+              <span class="input-group-text" type="submit" style="height: 38px; background-color:#e49a15; border:1.5px solid #e49a15;">
+              <i class="fa fa-search" style="color:white;"></i>
+              </span>
+          </form>
+          </div> 
+
+              <div class="menu-bar" style="margin-left: 0px;">
+          <li class="nav-item">
+            <a id="myheader" class="nav-link active" href="Home.html"> <i class="fa fa-home"></i> HOME</a>
+          </li>
+          <li class="nav-item">
+            <a id="myheader" class="nav-link" href="discover.html"> <i class="fa fa-circle-o-notch"></i> DISCOVER</a>
+          </li>
+              <li class="nav-item">
+              <a id="myheader" class="nav-link" href="cart.html"> <i class="fa fa-shopping-cart"></i> CART</a>
+            </li>
+          <li class="nav-item">
+              <a id="myheader" class="nav-link" href="login.html"> <i class="fa fa-sign-in"></i> LOGIN</a>
+          </li>
+          </div>
+      </ul>
+    </div>
+      <section>
+              <div>
+                  <form action="#" method="post" class="forms" style="margin-top: 115px; margin-bottom: 43px;" >
+                      <h2 style="text-align: center ; color: #d9860d;">REGISTER</h2>
+                      <br>
+                          <label class="login_fields">Your Name  :</label>
+                          <input type ="text" class="forms_fields" placeholder="Enter your name" name="uname" autocomplete="off" required>
+                      <br>
+                          <label class="login_fields">Mobile Number  :</label>
+                          <input type ="text" class="forms_fields" placeholder="Enter 10-digit Mobile number" pattern="{[0-9]{10}" 
+                          maxlength="10"  name="mob" autocomplete="off" required>
+                      <br>
+                          <label class="login_fields">Email  :</label>
+                          <input type ="Email" class="forms_fields" placeholder="Enter Email id" name="mob" autocomplete="off" required>
+                      <br>
+                          <label class="login_fields">Password  :</label>
+                          <input type ="Password" class="forms_fields" placeholder="Password must be atleast 6 characters" name="pswd"
+                          pattern=".{6,}" required>
+                      <br>
+                          <input type="submit" value="Register" class="butn">
+                      <br>
+                  </form>
+              </div>
+      </section>
+
+      <div class="footer">
+      <p>copyright 2019 <i class="fa fa-copyright"></i> ApniDukaan.com - All Rights reserved.</p>
+    </div>
+
+</body>  
+</html> 
